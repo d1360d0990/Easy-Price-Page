@@ -1,0 +1,157 @@
+.panel {
+  min-height: 100vh;
+  background: #1c0d4d;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1.25rem 2.5rem;
+}
+
+.panel__container {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.panel__header {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
+
+.panel__logo {
+  width: min(260px, 72vw);
+  height: auto;
+  object-fit: contain;
+}
+
+.panel__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.panel__menu-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  min-height: 118px;
+  padding: 1.25rem 0.75rem;
+  border: none;
+  border-radius: 22px;
+  background: #48c78e;
+  color: #2d3748;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 4px 16px rgba(72, 199, 142, 0.25);
+}
+
+.panel__menu-btn:hover {
+  background: #3db87e;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(72, 199, 142, 0.35);
+}
+
+.panel__menu-btn:active {
+  transform: translateY(0);
+}
+
+.panel__menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+}
+
+.panel__menu-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.panel__menu-label {
+  font-family: 'Nunito', system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2d3748;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.panel__exit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  width: 100%;
+  max-width: 200px;
+  min-height: 72px;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 22px;
+  background: #ffcc00;
+  color: #2d3748;
+  font-family: 'Nunito', system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 4px 16px rgba(255, 204, 0, 0.3);
+}
+
+.panel__exit svg {
+  width: 28px;
+  height: 28px;
+}
+
+.panel__exit:hover {
+  background: #e6b800;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 204, 0, 0.4);
+}
+
+.panel__exit:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 380px) {
+  .panel__grid {
+    gap: 1rem;
+  }
+
+  .panel__menu-btn {
+    min-height: 105px;
+    border-radius: 18px;
+  }
+
+  .panel__menu-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .panel__menu-label {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .panel {
+    padding-top: 3rem;
+  }
+
+  .panel__container {
+    max-width: 460px;
+    gap: 2.5rem;
+  }
+
+  .panel__menu-btn {
+    min-height: 130px;
+  }
+}

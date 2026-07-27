@@ -1,0 +1,68 @@
+.register-page {
+  justify-content: flex-start;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+.register-page__content {
+  max-width: 420px;
+  gap: 1.75rem;
+}
+
+.register-page__logo {
+  width: min(200px, 55vw);
+}
+
+.register-page__header {
+  text-align: center;
+}
+
+.register-page__header h1 {
+  font-family: 'Fredoka', 'Nunito', system-ui, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.register-page__header p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+.register-form {
+  gap: 1rem;
+}
+
+.register-form__submit {
+  margin-top: 0.75rem;
+  width: 100%;
+  padding: 0.85rem 2rem;
+}
+
+.register-page__footer {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.register-page__footer a {
+  color: #48c78e;
+  font-weight: 700;
+  transition: opacity 0.2s;
+}
+
+.register-page__footer a:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 480px) {
+  .register-page {
+    padding-top: 4.5rem;
+  }
+
+  .register-page__header h1 {
+    font-size: 1.3rem;
+  }
+}
